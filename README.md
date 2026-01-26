@@ -1,43 +1,65 @@
-# 🤖 AI & JS Full-Stack Engineer Curriculum
+# 🤖 AI & JS Full-Stack Engineering Archive
 
-인공지능 소프트웨어 전공자로서 AI 모델 개발부터 서비스 배포까지의 전 과정을 다루는 **일차(Day) 단위** 심화 학습 기록입니다.
-
----
-
-## 📌 학습 원칙 (Engineering Best Practice)
-1. **Deep Dive:** 라이브러리 사용법을 넘어 내부 동작 원리와 수학적 근거를 이해한다.
-2. **Clean Code:** 가독성, 효율성, 유지보수성을 고려하고 최신 문법을 적용한다.
-3. **Debugging:** 에러 해결 시 수정 코드뿐만 아니라 '원인 분석'과 '재발 방지 팁'을 기록한다.
-4. **Optimization:** 시간/공간 복잡도를 고려하여 실무 수준의 최적화 방안을 모색한다.
+인공지능 소프트웨어 전공자로서 AI 모델 설계부터 웹/모바일 서비스 배포까지의 전 과정을 심화 학습하는 저장소입니다. 각 Chapter는 단순 활용을 넘어 동작 원리 이해와 실무 최적화(Deep Dive)를 목표로 합니다.
 
 ---
 
-## 🗓️ 1단계: AI 기초 및 데이터 엔지니어링 (Day 01 ~ 05)
-| 일차 | 주제 | 핵심 학습 내용 (Deep Dive) | 실무 과제 & 예제 |
-| :--- | :--- | :--- | :--- |
-| **Day 01** | **선형대수 기초** | 텐서 차원(ND) 이해, 행렬 곱셈 연산 원리 | 행렬 내적 연산기 직접 구현 ($O(n^3)$ 분석) |
-| **Day 02** | **데이터 정제(Pandas)** | Vectorization 원리, 메모리 효율적 데이터 로딩 | 공공데이터 전처리 및 시계열 데이터 가공 |
-| **Day 03** | **미분과 최적화** | 도함수와 경사하강법(Gradient Descent) 수식 | 파이썬을 이용한 최적 점 찾기 알고리즘 구현 |
-| **Day 04** | **JS 비동기 제어** | Event Loop, Promise, async/await 이해 | AI API 호출을 위한 비동기 통신 인터페이스 |
-| **Day 05** | **데이터 시각화** | Matplotlib(Python) & D3.js(JS) 연동 | 학습 프로세스 실시간 대시보드 시각화 기초 |
+## 📌 학습 원칙 (Engineering Principles)
 
-## 🗓️ 2단계: 머신러닝 & 서비스 인터페이스 (Day 06 ~ 10)
-| 일차 | 주제 | 핵심 학습 내용 (Deep Dive) | 실무 과제 & 예제 |
-| :--- | :--- | :--- | :--- |
-| **Day 06** | **회귀(Regression)** | 손실 함수(MSE) 최소화 및 과적합 방지 | 주택 가격 예측 모델 및 L1/L2 규제 적용 |
-| **Day 07** | **분류(Classification)** | 로지스틱 회귀 및 결정 트리 앙상블 원리 | 타이타닉 생존자 예측 및 성능 지표(F1) 분석 |
-| **Day 08** | **TensorFlow.js 기초** | 브라우저 가속(WebGL) 및 메모리 관리 | 웹 브라우저 상의 실시간 수치 추론 엔진 구현 |
-| **Day 09** | **웹 기반 AI 배포** | 모델 JSON 직렬화 및 클라이언트 로드 | Python 모델(.h5)의 JS 변환 및 웹 배포 |
-| **Day 10** | **API 보안 및 서버** | Node.js Proxy 서버 구성 및 Key 보안 | OpenAI/HuggingFace API 연동 챗봇 서버 |
-
-## 🗓️ 3단계: 딥러닝 심화 & AI 서비스화 (Day 11 ~ 15)
-| 일차 | 주제 | 핵심 학습 내용 (Deep Dive) | 실무 과제 & 예제 |
-| :--- | :--- | :--- | :--- |
-| **Day 11** | **신경망(ANN/DNN)** | 활성화 함수 및 역전파(Backpropagation) | MNIST 손글씨 인식 3층 신경망 바닥부터 설계 |
-| **Day 12** | **컴퓨터 비전(CNN)** | 합성곱 연산(Convolution) 및 레이어 원리 | 웹캠 실시간 객체 탐지(Object Detection) 웹앱 |
-| **Day 13** | **자연어 처리(NLP)** | Embedding 및 Transformer 구조 이해 | 문장 감정 분석기 및 벡터 DB(Pinecone) 연동 |
-| **Day 14** | **모바일 AI (Native)** | React Native 환경의 경량 모델 적용 | 음성 인식(Whisper) 기반 스마트 일정 관리 앱 |
-| **Day 15** | **MLOps & Clean Code** | Docker 컨테이너화 및 리팩토링 가이드 | 최종 프로젝트 코드 리뷰 및 성능 최적화 리포트 |
+* **Principle 1. Deep Dive:** 라이브러리 뒤에 숨겨진 수학적 원리와 알고리즘을 파헤친다.
+* **Principle 2. Clean Code:** 가독성, 효율성, 유지보수성을 고려하여 최신 문법(Best Practice)을 적용한다.
+* **Principle 3. Root Cause Analysis:** 에러 발생 시 수정 코드뿐만 아니라 원인 분석과 재발 방지 팁을 기록한다.
+* **Principle 4. Performance:** 시간/공간 복잡도를 분석하고 하드웨어 가속(GPU/NPU) 및 메모리 최적화 방안을 고려한다.
 
 ---
-*본 커리큘럼은 실무 위주의 심화 과정과 고난도 예제를 포함하여 동작 원리와 최적화 방안을 깊이 있게 다룹니다.*
+
+## 📚 커리큘럼 로드맵 (Chapters)
+
+### 🟦 PART I. AI Fundamentals & Data Mathematics
+*AI의 엔진이 되는 수학적 기초와 데이터 처리 능력을 배양합니다.*
+
+* **Chapter 01. 선형대수와 텐서 (Linear Algebra)**
+    * 스칼라, 벡터, 행렬, 텐서의 차원 개념 및 메모리 배치(C/F-Contiguous) 이해.
+    * 행렬 곱셈의 수학적 원리 및 3중 for문 직접 구현 ($O(n^3)$ 분석).
+    * NumPy를 활용한 벡터화(Vectorization) 및 브로드캐스팅(Broadcasting) 성능 최적화.
+* **Chapter 02. 데이터 엔지니어링 실무 (Pandas & Data Handling)**
+    * 대용량 데이터 로딩 시 `dtype` 최적화 및 인덱싱 아키텍처 분석.
+    * 데이터 정제(Cleaning), 결측치 처리, 피처 엔지니어링 및 EDA 전략.
+* **Chapter 03. 미분과 최적화 (Optimization)**
+    * 연쇄 법칙(Chain Rule) 기반의 미분 원리 이해.
+    * 경사하강법(Gradient Descent) 구현 및 다양한 옵티마이저(Adam, RMSProp) 수식 분석.
+
+### 🟨 PART II. Machine Learning & JS Interface
+*AI 모델을 학습시키고, 이를 실제 서비스와 연결하는 기술을 다룹니다.*
+
+* **Chapter 04. JS 비동기 프로그래밍 및 AI API 연동**
+    * Event Loop 기반 비동기 처리(Promise, async/await) 심화 및 비동기 병목 해결.
+    * OpenAI, HuggingFace API 연동 및 스트리밍(SSE) 처리를 통한 인터랙티브 UI 구현.
+* **Chapter 05. 머신러닝 알고리즘 (Supervised Learning)**
+    * 회귀(Regression)와 분류(Classification) 모델의 수학적 설계.
+    * 손실 함수(Loss Function) 및 성능 평가 지표(F1, ROC-AUC)의 실무적 해석.
+* **Chapter 06. TensorFlow.js 웹 서비스 배포**
+    * 브라우저 환경에서의 모델 로딩 및 WebGL 가속 활용.
+    * Web Worker를 이용한 메인 스레드 비차단 연산 및 실시간 객체 탐지 UI/UX 구현.
+
+### 🟥 PART III. Deep Learning & MLOps
+*복잡한 신경망 구조를 이해하고 실무 환경에 배포하는 고급 과정을 다룹니다.*
+
+* **Chapter 07. 심층 신경망 (Deep Neural Networks)**
+    * MLP 아키텍처 설계와 역전파(Backpropagation) 알고리즘의 수식적 증명.
+    * 기울기 소실(Gradient Vanishing) 문제 분석 및 Batch Normalization 적용.
+* **Chapter 08. 현대적 AI 아키텍처 (CNN & Transformer)**
+    * Convolution 연산의 시각적 원리와 Self-Attention 메커니즘 직접 계산.
+    * 사전 학습된 모델(ViT, BERT)의 파인튜닝(Fine-tuning) 및 전이 학습.
+* **Chapter 09. Edge AI 및 모바일 최적화 (Mobile AI)**
+    * React Native 환경에서의 AI 모델 탑재 및 전용 엔진 실행.
+    * 모델 경량화(Quantization)를 통한 용량 절감 및 디바이스 내 추론 성능 최적화.
+* **Chapter 10. MLOps 및 최종 프로젝트 (Deployment)**
+    * FastAPI와 Next.js를 결합한 마이크로서비스 아키텍처 구축.
+    * Docker 컨테이너화 및 CI/CD 파이프라인을 통한 Full-Stack 서비스 완성.
+
+---
+## 🛠 실행 가이드
+- **환경**: VS Code, Jupyter Notebook (.ipynb)
+- **언어**: Python (AI Core), JavaScript/TypeScript (Full-Stack)
+- **노트 작성**: 각 로직 아래 시간 복잡도와 실행 환경 명시 필수.
